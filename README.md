@@ -1,6 +1,6 @@
 ## Amazon SageMaker Local Mode Examples
 
-This repository contains examples and related resources showing you how to train and serve on your local machine using Amazon SageMaker Local mode for training and serving. 
+This repository contains examples and related resources showing you how to preprocess, train, debug your training script with breakpoints, and serve on your local machine using Amazon SageMaker Local mode for processing jobs, training and serving. 
 
 ## Overview
 
@@ -19,6 +19,14 @@ Here you can see a TensorFlow example running on PyCharm. **The data for trainin
 
 ![SageMaker local mode serving in PyCharm](img/pycharm_sagemaker_local_serving.png)
 
+#### SageMaker local mode processing jobs in PyCharm
+
+![SageMaker local mode processing jobs in PyCharm](img/pycharm_sagemaker_local_processing_jobs.png)
+
+#### Debugging your training script running SageMaker local mode training in PyCharm
+
+![Debug your application](img/debug_your_application_2.png)
+
 
 ### Repository Structure
 
@@ -27,6 +35,8 @@ The repository contains the following resources:
 - **TensorFlow resources:**  
 
   - [**TensorFlow Script Mode Training and Serving**](tensorflow_script_mode_local_training_and_serving):  This example shows how to train and serve your model with TensorFlow and SageMaker script mode, on your local machine using SageMaker local mode.
+  - [**TensorFlow Script Mode Debug Training Script**](tensorflow_script_mode_debug_local_training):  This example shows how to debug your training script running inside a prebuilt SageMaker Docker image for TensorFlow, on your local machine using SageMaker local mode.
+  - [**TensorFlow Script Mode Deploy a Trained Model and inference on file from S3**](tensorflow_script_mode_local_model_inference):  This example shows how to deploy a trained model to a SageMaker endpoint, on your local machine using SageMaker local mode, and inference with a file in S3 instead of http payload for the SageMaker Endpoint.
   
 - **PyTorch resources:**  
 
@@ -34,9 +44,18 @@ The repository contains the following resources:
 
 - **Bring Your Own Container resources:**  
 
-  - [**Bring Your Own Contianer CatBoost Algorithm**](catboost_bring_your_own_container_local_training_and_serving):  This example provides a detailed walkthrough on how to package a CatBoost algorithm for training and production-ready hosting. We have included also a Python file for local training and serving that can run on your local computer, for faster development.    
-  - [**Bring Your Own Contianer LightGBM Algorithm**](lightgbm_bring_your_own_container_local_training_and_serving):  This example provides a detailed walkthrough on how to package a LightGBM algorithm for training and production-ready hosting. We have included also a Python file for local training and serving that can run on your local computer, for faster development.
+  - [**Bring Your Own Container CatBoost Algorithm**](catboost_bring_your_own_container_local_training_and_serving):  This example provides a detailed walkthrough on how to package a CatBoost algorithm for training and production-ready hosting. We have included also a Python file for local training and serving that can run on your local computer, for faster development.    
+  - [**Bring Your Own Container LightGBM Algorithm**](lightgbm_bring_your_own_container_local_training_and_serving):  This example provides a detailed walkthrough on how to package a LightGBM algorithm for training and production-ready hosting. We have included also a Python file for local training and serving that can run on your local computer, for faster development.
+  - [**Bring Your Own Container Prophet Algorithm**](prophet_bring_your_own_container_local_training_and_serving):  This example provides a detailed walkthrough on how to package a Prophet algorithm for training and production-ready hosting. We have included also a Python file for local training and serving that can run on your local computer, for faster development.
   
+- **Built-in scikit-learn Processing Job :**  
+
+  - [**Built-in scikit-learn Processing Job**](scikit_learn_local_processing):  This example provides a detailed walkthrough on how to use the built-in scikit-learn Docker image for processing jobs. We have included also a Python file for processing jobs that can run on your local computer, for faster development.
+
+- **Bring Your Own Container scikit-learn Processing Job :**  
+
+  - [**Bring Your Own Container scikit-learn Processing Job**](scikit_learn_bring_your_own_container_local_processing):  This example provides a detailed walkthrough on how to package a scikit-learn Docker image for processing jobs. We have included also a Python file for processing jobs that can run on your local computer, for faster development.
+    
 **Note**: Those examples were tested on macOS and Linux.
 
 ### Installation Instructions
